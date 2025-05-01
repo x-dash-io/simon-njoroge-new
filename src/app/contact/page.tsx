@@ -51,7 +51,7 @@ export default function ContactPage() {
           <div>
              <h2 className='text-2xl font-semibold mb-4'>Send a Message</h2>
             {/* The form won't submit data anywhere yet */}
-            <form action="#" method="POST" className="space-y-5">
+            <form action="https://formspree.io/f/mgvkogvj" method="POST" className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
                   Your Name
