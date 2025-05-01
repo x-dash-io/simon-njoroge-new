@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
 
 // Define your social links here - ADDED WhatsApp, Instagram, Telegram
 const socialLinks = [
-    { label: 'GitHub', href: 'https://github.com/'SingasonSimon', icon: FaGithub },
+    { label: 'GitHub', href: 'https://github.com/SingasonSimon', icon: FaGithub },
     { label: 'LinkedIn', href: '...', icon: FaLinkedin },
     { label: 'WhatsApp', href: 'https://wa.me/254748088741', icon: FaWhatsapp },
     { label: 'Instagram', href: 'https://instagram.com/singason.py', icon: FaInstagram },
