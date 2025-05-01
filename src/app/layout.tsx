@@ -1,19 +1,28 @@
-// src/app/(app)/layout.tsx
-import Navbar from '@/components/Navbar';
-import SocialLinks from '@/components/SocialLinks'; // <-- Import SocialLinks
+// src/app/layout.tsx (Minimal Root - CORRECTED)
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css'; // Keep global styles
 
-export default function AppLayout({
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Simon Njoroge Portfolio', // Update title
+  description: 'My developer portfolio website', // Update description
+};
+
+export default function MinimalRootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <>
-      <Navbar />
-      <SocialLinks /> {/* <-- Add SocialLinks component */}
-      <main className="container mx-auto px-4 py-8 min-h-screen pb-28">
-        {children}
-      </main>
-    </>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300`}>
+        {/* Just render children directly - the (app) layout will provide Navbar/main */}
+        {/* <ThemeProvider> */} {/* Add back later for dark mode */}
+           {children}
+        {/* </ThemeProvider> */}
+      </body>
+    </html>
   );
 }
