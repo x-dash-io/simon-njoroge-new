@@ -30,7 +30,7 @@ export default function AboutPage() {
           {/* Text Content - Remember to customize */}
           <div className="text-lg text-neutral-800 dark:text-neutral-200 space-y-4 text-center md:text-left">
              <p>
-              Hello! I'm <strong className="font-semibold">Simon Njoroge</strong>, a motivated Web Developer and Designer based in Rongai, Nakuru County, Kenya. I'm driven by the challenge and creativity involved in building engaging, user-friendly, and visually appealing digital experiences on the web. What excites me most is  the process of turning ideas into functional applications, solving complex frontend puzzles, crafting intuitive interfaces, learning new technologies].
+              Hello! I'm <strong className="font-semibold">Simon Njoroge</strong>, a motivated Web Developer and Designer based in Rongai, Nakuru County, Kenya. I'm driven by the challenge and creativity involved in building engaging, user-friendly, and visually appealing digital experiences on the web. What excites me most is  the process of turning ideas into functional applications, solving complex frontend puzzles, crafting intuitive interfaces, learning new technologies.
             </p>
             <p>
               I'm currently expanding my knowledge and skills as a student at <strong className="font-semibold">Kabarak University</strong>, where I'm pursuing a degree in <strong className="font-semibold">INFORMATION TECHNOLOGY</strong>. My journey into this field began when I built my first static website for fun, I took an introductory programming class, I became fascinated by how websites worked]. Since then, my passion for technology and design has only grown.

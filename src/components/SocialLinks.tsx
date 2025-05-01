@@ -1,14 +1,14 @@
 // src/components/SocialLinks.tsx
 import Link from 'next/link';
 // Import necessary icons - Added WhatsApp, Instagram, Telegram
-import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
+import { FaGithub, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
 // Keep BiEnvelope if you still want an email link
 // import { BiEnvelope } from 'react-icons/bi';
 
 // Define your social links here - ADDED WhatsApp, Instagram, Telegram
 const socialLinks = [
     { label: 'GitHub', href: 'https://github.com/SingasonSimon', icon: FaGithub },
-    { label: 'LinkedIn', href: '...', icon: FaLinkedin },
+    // { label: 'LinkedIn', href: '', icon: FaLinkedin },
     { label: 'WhatsApp', href: 'https://wa.me/254748088741', icon: FaWhatsapp },
     { label: 'Instagram', href: 'https://instagram.com/singason.py', icon: FaInstagram },
     // { // <-- Start comment
