@@ -18,6 +18,9 @@
         "name": "next"
       }
     ],
+    // --- ADDED baseUrl HERE ---
+    "baseUrl": ".",
+    // --- End Add ---
     "paths": {
       "@/*": ["./src/*"]
     }
