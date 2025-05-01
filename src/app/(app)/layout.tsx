@@ -1,4 +1,4 @@
-// src/app/(app)/layout.tsx (TEMPORARILY SIMPLIFIED)
+// src/app/(app)/layout.tsx (Add back <main>)
 import React from 'react';
 
 export default function AppLayout({
@@ -6,6 +6,10 @@ export default function AppLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Remove Navbar, SocialLinks, <main> tag etc. Just return children.
-  return <>{children}</>;
+  return (
+    // Add main tag back with its classes
+    <main className="container mx-auto px-4 py-8 min-h-screen pb-28">
+      {children}
+    </main>
+  );
 }
