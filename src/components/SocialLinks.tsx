@@ -7,10 +7,10 @@ import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
 
 // Define your social links here - ADDED WhatsApp, Instagram, Telegram
 const socialLinks = [
-    { label: 'GitHub', href: '...', icon: FaGithub },
+    { label: 'GitHub', href: 'https://github.com/'SingasonSimon', icon: FaGithub },
     { label: 'LinkedIn', href: '...', icon: FaLinkedin },
-    { label: 'WhatsApp', href: '...', icon: FaWhatsapp },
-    { label: 'Instagram', href: '...', icon: FaInstagram },
+    { label: 'WhatsApp', href: 'https://wa.me/254748088741', icon: FaWhatsapp },
+    { label: 'Instagram', href: 'https://instagram.com/singason.py', icon: FaInstagram },
     // { // <-- Start comment
     //   label: 'Telegram',
     //   href: 'https://t.me/x_dash_io',
@@ -38,7 +38,7 @@ export default function SocialLinks() {
             rel="noopener noreferrer"
             aria-label={`Link to my ${link.label}`}
             title={link.label}
-            className="p-2 bg-neutral-200 dark:bg-neutral-700 rounded-full text-neutral-800 dark:text-neutral-200 hover:bg-cyan-500 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-white transition-colors duration-200 shadow-md"
+            className="p-2 bg-white/50 dark:bg-neutral-700/50 backdrop-blur-sm border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-700 dark:text-neutral-200 hover:bg-cyan-500 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-white transition-colors duration-200 shadow-md"
           >
             <IconComponent className="w-5 h-5" />
           </Link>

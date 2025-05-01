@@ -1,37 +1,10 @@
-// src/app/(app)/projects/page.tsx
+// src/app/projects/page.tsx
 import ProjectList from '@/components/ProjectList';
-import type { Project as ProjectType } from '@/components/ProjectCard';
+import { hardcodedProjects } from '@/lib/data/projects'; // Import from shared file
+import type { Project as ProjectType } from '@/components/ProjectCard'; // Assuming type is exported from Card
 
-// --- Hardcoded Project Data ---
-// IMPORTANT: Update image URLs to point to files in your /public/images folder
-const hardcodedProjects: ProjectType[] = [
-  {
-    slug: 'cool-portfolio-v1',
-    title: 'My Awesome Portfolio',
-    // Use relative paths from the 'public' directory
-    projectImage: { url: '/images/portfolio-placeholder.png', alt: 'Portfolio screenshot' },
-    technologies: [{ name: 'Next.js' }, { name: 'TailwindCSS' }], // Removed PayloadCMS for now
-  },
-  {
-    slug: 'weather-app-react',
-    title: 'React Weather App',
-    projectImage: { url: '/images/weather-placeholder.png', alt: 'Weather App screenshot' },
-    technologies: [{ name: 'React' }, { name: 'API' }],
-  },
-  {
-    slug: 'node-task-manager',
-    title: 'Node.js Task Manager API',
-    projectImage: { url: '/images/api-placeholder.png', alt: 'API screenshot' },
-    technologies: [{ name: 'Node.js' }, { name: 'Express' }],
-  },
-  // Add more projects here directly
-];
-// --- End Hardcoded Data ---
-
-// Make the component non-async again
 export default function ProjectsPage() {
-  // Use the hardcoded data directly
-  const projects = hardcodedProjects;
+  const projects = hardcodedProjects; // Use imported data
 
   return (
     <section>
@@ -39,7 +12,7 @@ export default function ProjectsPage() {
       {projects.length > 0 ? (
          <ProjectList projects={projects} />
       ) : (
-        <p>No projects available yet.</p> // Updated message slightly
+        <p>No projects available yet.</p>
       )}
     </section>
   );

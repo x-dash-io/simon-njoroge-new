@@ -1,7 +1,7 @@
-// src/app/(app)/about/page.tsx
+// src/app/about/page.tsx
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import Link from 'next/link'; // Import Link
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About Me | Simon Njoroge Portfolio',
@@ -27,16 +27,16 @@ export default function AboutPage() {
             />
           </div>
 
-          {/* Text Content - DRAFT - Needs your input */}
-          <div className="text-lg text-neutral-700 dark:text-neutral-300 space-y-4 text-center md:text-left">
-            <p>
+          {/* Text Content - Remember to customize */}
+          <div className="text-lg text-neutral-800 dark:text-neutral-200 space-y-4 text-center md:text-left">
+             <p>
               Hello! I'm <strong className="font-semibold">Simon Njoroge</strong>, a motivated **Web Developer and Designer** based in Rongai, Nakuru County, Kenya. I'm driven by the challenge and creativity involved in building engaging, user-friendly, and visually appealing digital experiences on the web. What excites me most is [Your "Why" - e.g., the process of turning ideas into functional applications, solving complex frontend puzzles, crafting intuitive interfaces, learning new technologies].
             </p>
             <p>
               I'm currently expanding my knowledge and skills as a student at <strong className="font-semibold">Kabarak University</strong>, where I'm pursuing a degree in <strong className="font-semibold">[Your Course/Major]</strong>. My journey into this field began when [Your Origin Story - e.g., I built my first static website for fun, I took an introductory programming class, I became fascinated by how websites worked]. Since then, my passion for technology and design has only grown.
             </p>
              <p>
-               During my studies and personal projects, I've particularly enjoyed working with <strong className="font-semibold">[Mention 1-2 Specific Technologies, e.g., React and Next.js]</strong> and I've gained practical understanding of core concepts like <strong className="font-semibold">[Mention 1-2 Specific Concepts, e.g., responsive design principles and component-based architecture]</strong>. You can see some examples on my <Link href="/projects" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">Projects</Link> page.
+               During my studies and personal projects, I've particularly enjoyed working with <strong className="font-semibold">[Mention 1-2 Specific Technologies, e.g., React and Next.js]</strong> and I've gained practical understanding of core concepts like <strong className="font-semibold">[Mention 1-2 Specific Concepts, e.g., responsive design principles and component-based architecture]</strong>. You can see some examples on my <Link href="/projects" className="text-cyan-700 hover:underline dark:text-cyan-400 font-medium">Projects</Link> page.
             </p>
             <p>
               My approach to work involves striving to write <strong className="font-semibold">clean, maintainable code</strong> while always prioritizing a <strong className="font-semibold">positive and intuitive user experience</strong>. I believe great web applications are built not just with code, but with careful consideration for the end-user. Check out my detailed <Link href="/skills" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">Skills</Link> list for more.

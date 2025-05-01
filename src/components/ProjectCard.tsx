@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   // Removed console logs
 
   return (
-    <div className="border rounded-lg overflow-hidden shadow-lg bg-white dark:bg-neutral-800 hover:shadow-xl transition-shadow duration-300 group">
+    <div className="border rounded-lg overflow-hidden shadow-lg bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300 group border-neutral-200 dark:border-neutral-700">
       {projectImage?.url ? (
          <div className="relative h-48 w-full overflow-hidden">
            <Image
@@ -44,12 +44,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <div className="flex flex-wrap gap-2 mb-4 min-h-[3rem]">
           {technologies?.map((tech) => (
-            <span key={tech.id || tech.name} className="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900 dark:text-cyan-300">
+            <span key={tech.id || tech.name} className="bg-cyan-100 text-cyan-900 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900/50 dark:text-cyan-200">
               {tech.name}
             </span>
           ))}
         </div>
-        <Link href={`/projects/${slug}`} className="text-cyan-600 hover:text-cyan-800 dark:text-cyan-400 dark:hover:text-cyan-200 inline-block mt-2">
+        <Link href={`/projects/${slug}`} className="text-cyan-700 hover:text-cyan-900 dark:text-cyan-400 dark:hover:text-cyan-300 inline-block mt-2 font-medium">
           View Details &rarr;
         </Link>
       </div>
