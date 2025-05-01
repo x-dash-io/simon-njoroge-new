@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   // Replace with your actual email
-  const contactEmail = "your.email@example.com";
+  const contactEmail = "simonnjorogew65@gmail.com";
 
   return (
     <section className="py-8 md:py-12">
@@ -62,7 +62,7 @@ export default function ContactPage() {
                   id="name"
                   required
                   className="block w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm bg-white dark:bg-neutral-800 text-black dark:text-white"
-                  placeholder="Jane Doe"
+                  placeholder="Dylan James"
                 />
               </div>
               <div>
@@ -111,9 +111,6 @@ export default function ContactPage() {
                 >
                   Send Message
                 </button>
-                 <p className="text-xs text-center text-neutral-500 dark:text-neutral-400 mt-3">
-                   (Note: Form submission is not yet functional)
-                 </p>
               </div>
             </form>
           </div>

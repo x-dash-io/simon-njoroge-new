@@ -42,10 +42,10 @@ export default function AboutPage() {
               My approach to work involves striving to write <strong className="font-semibold">clean, maintainable code</strong> while always prioritizing a <strong className="font-semibold">positive and intuitive user experience</strong>. I believe great web applications are built not just with code, but with careful consideration for the end-user. Check out my detailed <Link href="/skills" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">Skills</Link> list for more.
             </p>
             <p>
-              Looking ahead, I'm actively <strong className="font-semibold">[Your Goal - e.g., seeking internship opportunities where I can contribute to real-world projects using Next.js, or eager to collaborate on freelance projects focused on frontend development and UI design]</strong>. I'm always open to learning and tackling new challenges.
+              Looking ahead, I'm actively <strong className="font-semibold">seeking internship opportunities where I can contribute to real-world projects using Next.js, or eager to collaborate on freelance projects focused on frontend development and UI design</strong>. I'm always open to learning and tackling new challenges.
             </p>
             <p>
-              Outside of tech, I enjoy [Your Hobbies/Interests - e.g., reading tech blogs, exploring the Rift Valley, playing football, listening to podcasts]. Don't hesitate to <Link href="/contact" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">reach out</Link>!
+              Outside of tech, I enjoy  Reading Tech Blogs, Online Gaming, Listening to podcasts. Don't hesitate to <Link href="/contact" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">reach out</Link>!
             </p>
           </div>
         </div>
