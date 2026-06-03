@@ -1,34 +1,18 @@
-// src/components/SocialLinks.tsx
 import Link from 'next/link';
-// Import necessary icons - Added WhatsApp, Instagram, Telegram
-import { FaGithub, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
-// Keep BiEnvelope if you still want an email link
-// import { BiEnvelope } from 'react-icons/bi';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
 
-// Define your social links here - ADDED WhatsApp, Instagram, Telegram
 const socialLinks = [
     { label: 'GitHub', href: 'https://github.com/SingasonSimon', icon: FaGithub },
-    // { label: 'LinkedIn', href: '', icon: FaLinkedin },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/simon-njoroge-4b538a268/', icon: FaLinkedin },
     { label: 'WhatsApp', href: 'https://wa.me/254748088741', icon: FaWhatsapp },
     { label: 'Instagram', href: 'https://instagram.com/singason.py', icon: FaInstagram },
-    // { // <-- Start comment
-    //   label: 'Telegram',
-    //   href: 'https://t.me/x_dash_io',
-    //   icon: FaTelegramPlane,
-    // }, // <-- End comment
   ];
+
 export default function SocialLinks() {
   return (
-    // Keep existing positioning and styling
     <div className="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
       {socialLinks.map((link) => {
         const IconComponent = link.icon;
-        // Add checks for new placeholders if needed
-         if (link.href.includes('YOUR_') || (link.label === 'WhatsApp' && link.href.includes('NUMBER'))) {
-             // Optionally hide link if placeholder URL/number is still present
-             // return null;
-         }
-
 
         return (
           <Link

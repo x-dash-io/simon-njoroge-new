@@ -1,34 +1,40 @@
-// src/lib/data/projects.ts
-import type { Project as ProjectType } from '@/components/ProjectCard'; // Import type
+import type { Project as ProjectType } from '@/components/ProjectCard';
 
-// Define and export the single source of truth for project data
 export const hardcodedProjects: ProjectType[] = [
   {
     slug: 'cool-portfolio-v1',
-    title: 'My Awesome Portfolio',
-    projectImage: { url: '/images/portfolio-placeholder.png', alt: 'Portfolio screenshot' },
+    title: 'Professional Portfolio Website',
+    projectImage: { url: '/images/portfolio-placeholder.png', alt: 'Portfolio website screenshot' },
     technologies: [{ name: 'Next.js' }, { name: 'TailwindCSS' }],
-    description: 'This is the hardcoded description for the portfolio project. Built from scratch using Next.js and Tailwind.', // Simple string
+    description: 'A modern, high-performance portfolio website built to establish a professional online presence. Focused on delivering a fast, accessible experience that showcases work effectively and drives client inquiries.',
+    outcome: 'Establishes a professional brand presence with fast load times and a seamless experience across all devices',
+    challenge: 'Needed a website that would present work professionally while being easy to navigate and fast-loading for visitors on any device.',
+    result: 'Created a responsive portfolio with dark mode, intuitive navigation, and a contact system that makes it easy for potential clients to reach out.',
     liveUrl: '#',
     repoUrl: '#',
   },
   {
     slug: 'weather-app-react',
-    title: 'React Weather App',
-    projectImage: { url: '/images/weather-placeholder.png', alt: 'Weather App screenshot' },
-    technologies: [{ name: 'React' }, { name: 'API' }],
-    description: 'A simple application allowing users to check the weather for a given city using the OpenWeatherMap API.', // Simple string
+    title: 'Real-Time Weather Dashboard',
+    projectImage: { url: '/images/weather-placeholder.png', alt: 'Weather Dashboard screenshot' },
+    technologies: [{ name: 'React' }, { name: 'API Integration' }],
+    description: 'A user-friendly weather dashboard that pulls real-time data from the OpenWeatherMap API. Designed with a clean interface that makes weather information instantly accessible and understandable.',
+    outcome: 'Delivers real-time weather data through a clean, intuitive interface that users can understand at a glance',
+    challenge: 'Weather APIs return complex data that needed to be simplified into a visual, easy-to-digest format for everyday users.',
+    result: 'Built a single-page app that fetches live weather data and presents it with clear visuals, reducing the time users spend finding weather information.',
     liveUrl: '#',
     repoUrl: '#',
   },
   {
     slug: 'node-task-manager',
-    title: 'Node.js Task Manager API',
-    projectImage: { url: '/images/api-placeholder.png', alt: 'API screenshot' },
+    title: 'Business Task Management API',
+    projectImage: { url: '/images/api-placeholder.png', alt: 'Task Manager API screenshot' },
     technologies: [{ name: 'Node.js' }, { name: 'Express' }],
-    description: null, // Keep null for no description
+    description: 'A backend API designed to help teams organize and track tasks efficiently. Built with scalability in mind, this system can be integrated into any frontend to power project management workflows.',
+    outcome: 'Enables teams to organize, track, and manage tasks efficiently through a robust backend system',
+    challenge: 'Teams needed a flexible, scalable backend system to manage tasks and workflows that could integrate with different frontend interfaces.',
+    result: 'Developed a RESTful API with CRUD operations, data persistence, and clear documentation, making it easy for any frontend team to build a task management interface on top of it.',
     liveUrl: null,
     repoUrl: '#',
   },
-  // Add more projects here
 ];

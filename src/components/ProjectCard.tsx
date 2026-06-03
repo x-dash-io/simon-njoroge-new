@@ -1,4 +1,3 @@
-// src/components/ProjectCard.tsx
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -8,8 +7,11 @@ export type Project = {
   projectImage: { url: string; alt: string; } | null;
   technologies: Array<{ name: string; id?: string | null }> | null;
   description?: string | null;
-  liveUrl?: string | null; // <-- ADD THIS LINE
-  repoUrl?: string | null; // <-- ADD THIS LINE
+  outcome?: string | null;
+  challenge?: string | null;
+  result?: string | null;
+  liveUrl?: string | null;
+  repoUrl?: string | null;
 };
 
 interface ProjectCardProps {
@@ -17,17 +19,13 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { slug, title, projectImage, technologies } = project;
-  // Removed serverUrl
-
-  // Removed console logs
+  const { slug, title, projectImage, technologies, outcome } = project;
 
   return (
     <div className="border rounded-lg overflow-hidden shadow-lg bg-white dark:bg-slate-800 hover:shadow-xl transition-shadow duration-300 group border-neutral-200 dark:border-neutral-700">
       {projectImage?.url ? (
          <div className="relative h-48 w-full overflow-hidden">
            <Image
-             // Use the URL directly (should be like /images/...)
              src={projectImage.url}
              alt={projectImage.alt || title}
              fill
@@ -41,8 +39,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       )}
       <div className="p-4">
+        {outcome && (
+          <p className="text-sm text-cyan-600 dark:text-cyan-400 font-medium mb-2 leading-tight">
+            {outcome}
+          </p>
+        )}
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <div className="flex flex-wrap gap-2 mb-4 min-h-[3rem]">
+        <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
           {technologies?.map((tech) => (
             <span key={tech.id || tech.name} className="bg-cyan-100 text-cyan-900 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-cyan-900/50 dark:text-cyan-200">
               {tech.name}

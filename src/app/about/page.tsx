@@ -1,52 +1,60 @@
-// src/app/about/page.tsx
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Me | Simon Njoroge Portfolio',
-  description: 'Learn more about Simon Njoroge, his skills, and journey as a web developer and designer based in Kenya.',
+  title: 'About | Simon Njoroge',
+  description: 'Simon Njoroge builds websites and web applications that help businesses grow. Based in Nakuru, Kenya.',
 };
 
 export default function AboutPage() {
   return (
     <section className="py-8 md:py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-4xl font-bold text-center mb-10 md:mb-16">About Me</h1>
 
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-          {/* Profile Image */}
-          <div className="w-48 h-48 md:w-60 md:h-60 flex-shrink-0 relative overflow-hidden rounded-full shadow-lg border-4 border-neutral-200 dark:border-neutral-700">
+          <div className="w-48 h-48 md:w-56 md:h-56 flex-shrink-0 relative overflow-hidden rounded-full shadow-lg border-4 border-neutral-200 dark:border-neutral-700">
             <Image
-              src="/images/profile-photo.jpg" // <<< REPLACE with your image file name in /public/images/
-              alt="A photo of Simon Njoroge"   // <<< REPLACE with good alt text
+              src="/images/profile-photo.jpg"
+              alt="Simon Njoroge"
               fill
-              sizes="(max-width: 768px) 192px, 240px"
+              sizes="(max-width: 768px) 192px, 224px"
               className="object-cover"
               priority
             />
           </div>
 
-          {/* Text Content - Remember to customize */}
-          <div className="text-lg text-neutral-800 dark:text-neutral-200 space-y-4 text-center md:text-left">
+          <div className="text-lg text-neutral-800 dark:text-neutral-200 space-y-5 text-center md:text-left">
+             <p className="text-xl font-semibold text-cyan-700 dark:text-cyan-400">
+               I help businesses grow by building websites that are fast, beautiful, and easy to use.
+             </p>
              <p>
-              Hello! I'm <strong className="font-semibold">Simon Njoroge</strong>, a motivated Web Developer and Designer based in Rongai, Nakuru County, Kenya. I'm driven by the challenge and creativity involved in building engaging, user-friendly, and visually appealing digital experiences on the web. What excites me most is  the process of turning ideas into functional applications, solving complex frontend puzzles, crafting intuitive interfaces, learning new technologies.
-            </p>
-            <p>
-              I'm currently expanding my knowledge and skills as a student at <strong className="font-semibold">Kabarak University</strong>, where I'm pursuing a degree in <strong className="font-semibold">INFORMATION TECHNOLOGY</strong>. My journey into this field began when I built my first static website for fun, I took an introductory programming class, I became fascinated by how websites worked]. Since then, my passion for technology and design has only grown.
-            </p>
+               Hi, I&apos;m <strong className="font-semibold">Simon Njoroge</strong> — a Web Developer and Designer based in Rongai, Nakuru County, Kenya. I turn ideas into functional, engaging websites and applications that help businesses attract customers and operate more efficiently.
+             </p>
              <p>
-               During my studies and personal projects, I've particularly enjoyed working with <strong className="font-semibold">HTML, CSS, PYTHON, React and Next.js</strong> and I've gained practical understanding of core concepts like <strong className="font-semibold">responsive design principles and component-based architecture</strong>. You can see some examples on my <Link href="/projects" className="text-cyan-700 hover:underline dark:text-cyan-400 font-medium">Projects</Link> page.
-            </p>
+               I&apos;m currently pursuing a degree in <strong className="font-semibold">Information Technology</strong> at <strong className="font-semibold">Kabarak University</strong>, where I combine academic knowledge with hands-on project experience. My focus is always on the same thing: delivering results that matter for your business.
+             </p>
             <p>
-              My approach to work involves striving to write <strong className="font-semibold">clean, maintainable code</strong> while always prioritizing a <strong className="font-semibold">positive and intuitive user experience</strong>. I believe great web applications are built not just with code, but with careful consideration for the end-user. Check out my detailed <Link href="/skills" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">Skills</Link> list for more.
+              What I care about most is <strong className="font-semibold">making technology work for people</strong>. Whether it&apos;s a simple business website or a complex web application, I prioritize:
             </p>
+            <ul className="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+              <li><strong>Clarity</strong> — Visitors should understand what you offer within seconds</li>
+              <li><strong>Speed</strong> — Fast-loading sites keep visitors engaged and improve search rankings</li>
+              <li><strong>Reliability</strong> — Your site should work flawlessly on any device, every time</li>
+              <li><strong>Growth</strong> — Every project is built with your business goals in mind</li>
+            </ul>
             <p>
-              Looking ahead, I'm actively <strong className="font-semibold">seeking internship opportunities where I can contribute to real-world projects using Next.js, or eager to collaborate on freelance projects focused on frontend development and UI design</strong>. I'm always open to learning and tackling new challenges.
+              I&apos;m currently open to <strong className="font-semibold">internship opportunities</strong> and <strong className="font-semibold">freelance projects</strong>. If you need a website that actually helps your business grow, let&apos;s talk.
             </p>
-            <p>
-              Outside of tech, I enjoy  Reading Tech Blogs, Online Gaming, Listening to podcasts. Don't hesitate to <Link href="/contact" className="text-cyan-600 hover:underline dark:text-cyan-400 font-medium">reach out</Link>!
-            </p>
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
+              <Link href="/contact" className="px-6 py-3 bg-cyan-600 text-white font-medium rounded-lg shadow hover:bg-cyan-700 transition-colors duration-200">
+                Let&apos;s Work Together
+              </Link>
+              <Link href="/projects" className="px-6 py-3 bg-neutral-200 text-neutral-800 dark:bg-neutral-700 dark:text-neutral-200 font-medium rounded-lg shadow hover:bg-neutral-300 dark:hover:bg-neutral-600 transition-colors duration-200">
+                View My Work
+              </Link>
+            </div>
           </div>
         </div>
       </div>
