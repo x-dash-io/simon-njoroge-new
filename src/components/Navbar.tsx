@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/', label: 'Home', icon: BiHomeAlt },
   { href: '/about', label: 'About', icon: BiUser },
   { href: '/projects', label: 'Projects', icon: BiBriefcaseAlt2 },
-  { href: '/skills', label: 'What I Do', icon: BiWrench },
+  { href: '/what-i-do', label: 'What I Do', icon: BiWrench },
   { href: '/resume', label: 'Resume', icon: BiFileBlank },
   { href: '/contact', label: 'Contact', icon: BiEnvelope },
 ];

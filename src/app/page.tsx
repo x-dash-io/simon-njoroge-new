@@ -41,14 +41,16 @@ export default function HomePage() {
     <div>
       <section className="text-center py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Image
-            src="/images/profile-photo.jpg"
-            alt="Simon Njoroge"
-            width={140}
-            height={140}
-            className="rounded-full mx-auto mb-6 border-4 border-neutral-200 dark:border-neutral-700 shadow-lg"
-            priority
-          />
+          <div className="w-44 h-44 md:w-52 md:h-52 mx-auto mb-8 relative overflow-hidden rounded-2xl shadow-xl border-4 border-neutral-200 dark:border-neutral-700">
+            <Image
+              src="/images/me.jpg"
+              alt="Simon Njoroge"
+              fill
+              sizes="(max-width: 768px) 176px, 208px"
+              className="object-cover"
+              priority
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             I Build Websites That Grow Your Business
           </h1>

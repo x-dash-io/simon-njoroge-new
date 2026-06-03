@@ -14,12 +14,12 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold text-center mb-10 md:mb-16">About Me</h1>
 
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-          <div className="w-48 h-48 md:w-56 md:h-56 flex-shrink-0 relative overflow-hidden rounded-full shadow-lg border-4 border-neutral-200 dark:border-neutral-700">
+          <div className="w-52 h-52 md:w-64 md:h-64 flex-shrink-0 relative overflow-hidden rounded-2xl shadow-xl border-4 border-neutral-200 dark:border-neutral-700">
             <Image
-              src="/images/profile-photo.jpg"
+              src="/images/me.jpg"
               alt="Simon Njoroge"
               fill
-              sizes="(max-width: 768px) 192px, 224px"
+              sizes="(max-width: 768px) 208px, 256px"
               className="object-cover"
               priority
             />

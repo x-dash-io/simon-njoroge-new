@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
-  const resumeFilename = "SimonNjoroge_Resume.pdf";
+  const resumeFilename = "Simon_Njoroge_CV.pdf";
   const resumeUrl = `/docs/${resumeFilename}`;
 
   return (

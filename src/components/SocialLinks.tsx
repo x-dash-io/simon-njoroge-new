@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
 
 const socialLinks = [
-    { label: 'GitHub', href: 'https://github.com/SingasonSimon', icon: FaGithub },
+    { label: 'GitHub', href: 'https://github.com/x-dash-io', icon: FaGithub },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/simon-njoroge-4b538a268/', icon: FaLinkedin },
     { label: 'WhatsApp', href: 'https://wa.me/254748088741', icon: FaWhatsapp },
     { label: 'Instagram', href: 'https://instagram.com/singason.py', icon: FaInstagram },

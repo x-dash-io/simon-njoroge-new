@@ -1,8 +1,15 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // You can add Next.js configuration options here if needed
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: '/skills',
+        destination: '/what-i-do',
+        permanent: true,
+      },
+    ];
+  },
 };
 
-module.exports = nextConfig; // Use module.exports
+module.exports = nextConfig;
